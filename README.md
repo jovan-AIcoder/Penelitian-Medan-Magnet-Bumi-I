@@ -104,8 +104,7 @@ Membandingkan model dengan simulasi fisika (IGRF, CHAOS geomagnetic model).
 
 Lisensi:
 
-Repositori ini menggunakan lisensi bebas-modifikasi (silakan tambahkan MIT/Apache/CC sesuai keinginanmu).
-
+Repositori ini menggunakan lisensi bebas-modifikasi.
 Kontributor:
 
 Dikembangkan oleh: Jovan Alcoder
