@@ -1,3 +1,4 @@
+(This project is made in Indonesian language by Jovan, a physicist)
 (Program ditulis dalam Bahasa Indonesia)
 AI prediksi medan magnet bumi
 Jalankan file predictmagnet.py untuk mengetahui medan magnet pada jam tertentu
