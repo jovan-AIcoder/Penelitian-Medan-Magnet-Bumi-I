@@ -58,17 +58,29 @@ Source: magnetometer observations (location not specified)
 
 ## File	Description
 `GenerateModel.py`	Main script to train models
+
 `Model_Bx.h5`	Trained model for Bx component
+
 `Model_By.h5`	Trained model for By component
+
 `Model_Bz.h5`	Trained model for Bz component
+
 `README.md`	Project documentation
+
 `datamagnet.csv` Dataset fot training
+
 `scaler_Bx.pkl` Scaler for Bx component
+
 `scaler_By.pkl` Scaler for By component
+
 `scaler_Bz.pkl` Scaler for Bz component
+
 `scaler_Time.pkl` Scaler for time
+
 `viewgraph.py` Show the graph of magnetic variation over time
+
 `predictmagnet.py` You can input time (in decimal hours) to predict the magnetic field
+
 `MagneticProperties.py` Show all information about geomagnetic condition in Earth such as magnetization, magnetic dipole, inclination, etc
 
 
@@ -104,7 +116,7 @@ python predictmagnet.py
 
 ## License
 
-This repository is provided under a permissive modification-friendly license.
+This repository is provided under MIT license.
 
 
 
