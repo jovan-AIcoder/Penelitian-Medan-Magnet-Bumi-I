@@ -1,10 +1,9 @@
 # Prediction of Daily Variations of the Earth's Magnetic Field Using Deep Neural Networks
 
 This repository contains a TensorFlow-based deep learning implementation to predict the Earth's magnetic field components (Bx, By, Bz) from time of day. The model is intended to explore daily variation dynamics influenced by ionospheric currents, global current systems, and other electromagnetic processes.
-
 ---
 
-## Background
+## Introduction
 
 The Earth's magnetic field exhibits daily variations with relatively regular patterns, primarily driven by ionospheric Sq currents, solar radiation, and magnetospheric plasma interactions. These variations are typically on the order of thousands of nanoTesla (nT) and can be modeled empirically using machine learning approaches.
 
@@ -62,7 +61,6 @@ Source: magnetometer observations (location not specified)
   - comparison of physics-based vs data-driven models
 
 Files in the Repository
-
 ---
 
 ## File	Description
@@ -71,7 +69,14 @@ Files in the Repository
 `Model_By.h5`	Trained model for By component
 `Model_Bz.h5`	Trained model for Bz component
 `README.md`	Project documentation
-
+`datamagnet.csv` Dataset fot training
+`scaler_Bx.pkl` Scaler for Bx component
+`scaler_By.pkl` Scaler for By component
+`scaler_Bz.pkl` Scaler for Bz component
+`scaler_Time.pkl` Scaler for time
+`viewgraph.py` Show the graph of magnetic variation over time
+`predictmagnet.py` You can input time (in decimal hours) to predict the magnetic field
+`MagneticProperties.py` Show all information about geomagnetic condition in Earth such as magnetization, magnetic dipole, inclination, etc
 ---
 
 ## Usage
@@ -82,22 +87,14 @@ Files in the Repository
 pip install tensorflow numpy scikit-learn
 ```
 
-2. Run training
+2. Run predictmagnet.py
 
 ```bash
-python GenerateModel.py
+python predictmagnet.py
 ```
-
-3. Load a model
-
-```python
-from tensorflow import keras
-
-model = keras.models.load_model("Model_Bx.h5")
-pred = model.predict([[time_in_decimal_hours]])
-```
-
+3. Input time to console
 ---
+
 
 ## Potential Improvements
 
@@ -114,7 +111,6 @@ pred = model.predict([[time_in_decimal_hours]])
 ## License
 
 This repository is provided under a permissive modification-friendly license.
-
 ---
 
 
@@ -126,5 +122,4 @@ Topic: AI for Geophysics / Earth's Magnetic Field Modeling
 
 Made in Indonesia
 ```
-
 ---
