@@ -1,17 +1,13 @@
 # Prediction of Daily Variations of the Earth's Magnetic Field Using Deep Neural Networks
 
 This repository contains a TensorFlow-based deep learning implementation to predict the Earth's magnetic field components (Bx, By, Bz) from time of day. The model is intended to explore daily variation dynamics influenced by ionospheric currents, global current systems, and other electromagnetic processes.
----
 
 ## Introduction
 
 The Earth's magnetic field exhibits daily variations with relatively regular patterns, primarily driven by ionospheric Sq currents, solar radiation, and magnetospheric plasma interactions. These variations are typically on the order of thousands of nanoTesla (nT) and can be modeled empirically using machine learning approaches.
-
 The model in this repository uses a small dataset (48 samples per day) with 30-minute time resolution to learn the daily periodic patterns for the three magnetic field components.
----
 
 ## Model Structure
-
 The model is built as a multilayer feed-forward neural network with the following characteristics:
 
 Architecture:
@@ -37,7 +33,6 @@ Typical loss range observed:
 0.0021 – 0.0041 (in scaled space)
 
 which indicates reasonably good fitting given the limited dataset size.
----
 
 ## Dataset
 
@@ -49,7 +44,6 @@ Dataset details:
 - Magnetic field component values in nanoTesla (nT)
 
 Source: magnetometer observations (location not specified)
----
 
 ## Project Goals
 
@@ -60,8 +54,7 @@ Source: magnetometer observations (location not specified)
   - correlation with Kp/Dst indices
   - comparison of physics-based vs data-driven models
 
-Files in the Repository
----
+
 
 ## File	Description
 `GenerateModel.py`	Main script to train models
@@ -77,7 +70,8 @@ Files in the Repository
 `viewgraph.py` Show the graph of magnetic variation over time
 `predictmagnet.py` You can input time (in decimal hours) to predict the magnetic field
 `MagneticProperties.py` Show all information about geomagnetic condition in Earth such as magnetization, magnetic dipole, inclination, etc
----
+
+
 
 ## Usage
 
@@ -93,7 +87,7 @@ pip install tensorflow numpy scikit-learn
 python predictmagnet.py
 ```
 3. Input time to console
----
+
 
 
 ## Potential Improvements
@@ -106,12 +100,12 @@ python predictmagnet.py
 - Use LSTM/Transformer architectures to capture deeper temporal dynamics.
 - Compare the model with physics-based simulations (IGRF, CHAOS models).
 
----
+
 
 ## License
 
 This repository is provided under a permissive modification-friendly license.
----
+
 
 
 ## Contributors
@@ -122,4 +116,3 @@ Topic: AI for Geophysics / Earth's Magnetic Field Modeling
 
 Made in Indonesia
 ```
----
